@@ -1,0 +1,23 @@
+pg-dbt-workshop:
+  target: dev
+  outputs:
+    dev:
+      type: <TYPE>
+      host: <HOST>
+      user: <USER>
+      password: <PASSWORD>
+      port: <PORT>
+      dbname: <DB_NAME>
+      schema: <SCHEMA>
+      threads: 4
+      keepalives_idle: 0 # default 0, indicating the system default
+# bq-de-workshop:
+#   target: dev
+#   outputs:
+#     dev:
+#       type: bigquery
+#       method: service-account
+#       project: taxi-rides-ny
+#       dataset: dbt_shubh_singh
+#       threads: 4
+#       keyfile: terra-creds.json

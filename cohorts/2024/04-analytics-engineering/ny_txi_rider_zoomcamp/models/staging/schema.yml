@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: staging
+    database: ny_taxi
+    schema: public
+    tables:
+    - name: yellow_taxi_data
+
+models:
+  - name: stg_yellow_taxi_data
+    description: "staging model for yellow taxi data"
